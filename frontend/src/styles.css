@@ -1,0 +1,57 @@
+/* Fun Notepad Style for Answer Box */
+.answer-container {
+    background: linear-gradient(135deg, #fffdc5, #ffeb99); /* Light yellow gradient */
+    border: 4px solid #ffcc00; /* Thick yellow border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    width: 60%;
+    margin-top: 20px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+    font-family: 'Comic Sans MS', 'Marker Felt', cursive; /* Fun handwriting font */
+    position: relative;
+    transform: rotate(-2deg); /* Slight tilt for a fun look */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect - Slight Jump */
+.answer-container:hover {
+    transform: rotate(0deg) scale(1.05); /* Straightens and enlarges */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Notepad Stripes */
+.answer-container::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: calc(100% - 20px);
+    background: repeating-linear-gradient(
+        white 0px,
+        white 30px,
+        #ffeb99 31px
+    ); /* Light yellow notepad stripes */
+    z-index: -1;
+    border-radius: 15px;
+}
+
+/* Fancy Title */
+.answer-container h3 {
+    color: #ff6b6b;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 5px rgba(255, 107, 107, 0.5); /* Cool text shadow */
+}
+
+/* Stylish Text */
+.answer-container p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Make Bold Labels More Playful */
+.answer-container strong {
+    color: #ff4081;
+    text-decoration: underline;
+}

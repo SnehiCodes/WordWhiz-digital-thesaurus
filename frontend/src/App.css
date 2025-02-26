@@ -1,0 +1,41 @@
+/* Stylish Input Box */
+.input-container input {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-container input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  outline: none;
+}
+
+/* Fancy Answer Box */
+.answer-container {
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  border-radius: 12px;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.answer-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Typography Improvements */
+.answer-container p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.answer-container strong {
+  color: #007bff;
+  font-weight: bold;
+}
